@@ -67,10 +67,6 @@ body {
 }
 
 .nav__link:hover {
-  color: yellowgreen;
-}
-
-.nav__link[data-qa='hover']:hover {
   color: var(--blue-color);
 }
 
