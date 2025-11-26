@@ -18,7 +18,7 @@ body {
   padding: 0 50px;
 }
 
-.nav_item {
+.nav__item {
   list-style: none;
 }
 
@@ -32,7 +32,7 @@ body {
   text-decoration: none;
 }
 
-.nav_list {
+.nav__list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -47,12 +47,13 @@ body {
   justify-content: space-between;
 }
 
-.colored {
+.is-active {
+  position: relative;
   color: var(--blue-color);
 }
 
-.is-active {
-  position: relative;
+.nav__link.is-active {
+  color: var(--blue-color);
 }
 
 .is-active::after {
@@ -70,6 +71,6 @@ body {
   color: var(--blue-color);
 }
 
-.nav .nav_list .nav_item:not(:first-child) .nav__link {
+.nav__item:not(:first-child) {
   margin-left: 20px;
 }
